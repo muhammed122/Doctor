@@ -1,16 +1,14 @@
-package com.example.doctor
+package com.example.doctor.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.Animation
-import android.view.animation.AnimationUtils
-import kotlinx.android.synthetic.main.activity_splash.*
+import com.example.doctor.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.Main
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class Splash : AppCompatActivity() {
 

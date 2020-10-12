@@ -1,10 +1,9 @@
-package com.example.doctor
+package com.example.doctor.ui
 
-import android.annotation.SuppressLint
-import android.content.Context
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceManager
+import com.example.doctor.R
 
 
 class MainActivity : AppCompatActivity() {
