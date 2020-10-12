@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_start">@dimen/_14sdp</dimen>
+    <dimen name="margin_end">@dimen/_14sdp</dimen>
+    <dimen name="padding">@dimen/_8sdp</dimen>
+    <dimen name="font_title">@dimen/_20sdp</dimen>
+    <dimen name="font_hint">@dimen/_12sdp</dimen>
+    <dimen name="font_pragraph">@dimen/_14sdp</dimen>
+
+
+
+</resources>

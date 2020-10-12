@@ -1,0 +1,36 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+<!--        change uder line color of textinputlayout without selection-->
+        <item name="colorControlNormal">#71A8E3</item>
+
+        <!--        change uder line color of textinputlayout with selection-->
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <style name="customTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--        change uder line color of textinputlayout without selection-->
+        <item name="colorControlNormal">#71A8E3</item>
+
+        <!--        change uder line color of textinputlayout with selection-->
+        <item name="colorControlActivated">#009688</item>
+    </style>
+
+    <style name="MyCheckbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">#fff</item>
+        <item name="android:colorControlActivated">#fff</item>
+
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+</resources>

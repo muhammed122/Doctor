@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="blue">#54D7EE</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="hint_color">#ffff</color>
+    <color name="hint_color1">#ADCCE2</color>
+    <color name="gray">#AFB8C9</color>
+    <color name="background_color">#00528A</color>
+    <color name="background_btn">#E8E5EB</color>
+    <color name="text_btn_color">#615E74</color>
+    <color name="red">#D10C0C</color>
+
+    <color name="signup_background">#3789E2</color>
+    <color name="green">#4CAF50</color>
+    <color name="bg_bubble_self">#62caa6</color>
+    <color name="bg_bubble_watbot">#ecf0f1</color>
+
+</resources>

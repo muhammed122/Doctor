@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigaation"
+    app:startDestination="@id/signIn">
+    <fragment
+        android:id="@+id/statusBed"
+        android:name="com.example.doctor.ui.bedstatus.StatusBed"
+        android:label="fragment_status_bed"
+        tools:layout="@layout/fragment_status_bed" />
+    <fragment
+        android:id="@+id/chatRoom"
+        android:name="com.example.doctor.ui.chatroom.ChatRoom"
+        android:label="fragment_chat_room"
+        tools:layout="@layout/fragment_chat_room" />
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.doctor.ui.home.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_chatRoom"
+            app:destination="@id/chatRoom" />
+        <action
+            android:id="@+id/action_home2_to_hospital"
+            app:destination="@id/hospital" />
+        <action
+            android:id="@+id/action_home2_to_statusBed2"
+            app:destination="@id/statusBed" />
+    </fragment>
+    <fragment
+        android:id="@+id/signIn"
+        android:name="com.example.doctor.ui.signin.SignIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signIn_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.doctor.ui.signup.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_signIn"
+            app:destination="@id/signIn"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/hospitalsLocations"
+        android:name="com.example.doctor.ui.location.HospitalsLocations"
+        android:label="fragment_hospitals_locations"
+        tools:layout="@layout/fragment_hospitals_locations" />
+    <fragment
+        android:id="@+id/hospital"
+        android:name="com.example.doctor.ui.location.hospitals.Hospital"
+        android:label="fragment_hosbital"
+        tools:layout="@layout/fragment_hosbital" >
+        <action
+            android:id="@+id/action_hospital_to_hospitalsLocations"
+            app:destination="@id/hospitalsLocations" />
+    </fragment>
+</navigation>

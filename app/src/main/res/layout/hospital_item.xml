@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:background="?attr/colorBackgroundFloating"
+    android:padding="5dp">
+
+    <TextView
+        android:text="H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvIcon"
+        android:background="@drawable/circular_textview"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_title"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+
+        <TextView
+            android:text="Hospital Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hospital_name"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:text="Doakii Giza, Egypt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hospital_location"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:padding="@dimen/_3sdp">
+            <TextView
+                android:id="@+id/available_beds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5 beds"
+                android:textColor="@color/signup_background"/>
+
+            <TextView
+                android:id="@+id/busy_beds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3 beds"
+                android:textColor="@color/red"/>
+            <ImageView
+                android:id="@+id/show_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location_icon"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5.5"
+        android:gravity="right|center_vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:padding="5dp"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/ic_distance"
+                android:id="@+id/imageDist" />
+
+            <TextView
+
+                android:text="0.00 km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDistance"
+                android:layout_weight="1"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:padding="5dp"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/ic_time"
+                android:id="@+id/imageTime" />
+
+            <TextView
+                android:text="0 min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTime"
+                android:layout_weight="1"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/book_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/book"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/book_btn"
+            android:layout_marginTop="@dimen/_3sdp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

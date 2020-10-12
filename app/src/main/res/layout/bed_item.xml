@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:background="?attr/colorBackgroundFloating"
+    android:padding="5dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_bed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bed_icon"
+        android:padding="@dimen/_3sdp"/>
+
+    <TextView
+        android:id="@+id/bed_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_1sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/font_pragraph"
+        android:textColor="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/bed_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_1sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/font_pragraph"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        />
+
+</LinearLayout>
